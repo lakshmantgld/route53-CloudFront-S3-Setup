@@ -1,6 +1,6 @@
 # Route53-CloudFront-S3-Setup
-- This repo is aimed to list out the steps for setting up a Highly Available WebApp using Route53, CloudFront and S3.
-- Listing out the best practices like the optimal TTL(time to live), gzip, SSL implementation, automating invalidation requests and so on.
+- This repo is aimed to list out the steps for setting up a **Highly Available WebApp** using **Route53**, **CloudFront** and **S3**.
+- Listing out the best practices like the optimal **TTL**(time to live), **gzip**, **SSL** implementation, automating **invalidation** requests and so on.
 
 ### Technical Architecture:
 ![Architecture diagram](https://raw.githubusercontent.com/lakshmantgld/route53-CloudFront-S3-Setup/master/readmeFiles/architecture.png)
@@ -11,4 +11,4 @@ Since setting up of each service requires a brief description, I have divided th
 ### Hosting WebApp in S3:
 **Amazon S3** is storage for the Internet. It has a simple web services interface that you can use to store and retrieve any amount of data, at any time, from anywhere on the web. It gives any developer access to the same highly scalable, reliable, fast, inexpensive data storage infrastructure that Amazon uses to run its own global network of web sites.
 
-1. [Deploying React App / SPA in S3](https://github.com/lakshmantgld/route53-CloudFront-S3-Setup/master/readmeFiles/s3Setup.md).
+1. [Deploying React App / SPA in S3](https://github.com/lakshmantgld/route53-CloudFront-S3-Setup/blob/master/readmeFiles/s3Setup.md).
