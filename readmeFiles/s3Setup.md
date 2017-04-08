@@ -31,4 +31,6 @@ To upload our data (index.html, bundle.js, images), we first create a bucket in 
   }  
   ```
 
-This makes the **nj2jp react app** to be publicly accessible by all users. Now that we have created S3 bucket to host our files, lets see the setup to automate the deployment of build files to S3.
+This makes the **static website** to be publicly accessible by all users. Navigating to the **endpoint** in the static website property will render our website in the browser.
+
+Now that we have created S3 bucket to host our files, lets see the setup to [automate the deployment of build files to S3](https://github.com/lakshmantgld/route53-CloudFront-S3-Setup/blob/master/readmeFiles/s3Setup.md).
