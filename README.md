@@ -22,3 +22,11 @@ Since setting up of each service requires a brief description, I have divided th
 **Amazon CloudFront** is a global content delivery network (CDN) service that accelerates delivery of your websites, APIs, video content or other web assets. It integrates with other Amazon Web Services products to give developers and businesses an easy way to accelerate content to end users with no minimum usage commitments.
 
 - [Setting CF WebDistribution with S3](https://github.com/lakshmantgld/route53-CloudFront-S3-Setup/blob/master/readmeFiles/cfWebDistribution.md).
+- [SSL for CloudFront Distribution](https://github.com/lakshmantgld/route53-CloudFront-S3-Setup/blob/master/readmeFiles/SSLForCF.md).
+- [Gzip compression in CloudFront](https://github.com/lakshmantgld/route53-CloudFront-S3-Setup/blob/master/readmeFiles/gzipInCF.md).
+- [Cache Expiry in CloudFront Distribution](https://github.com/lakshmantgld/route53-CloudFront-S3-Setup/blob/master/readmeFiles/ttlInCF.md).
+
+### Routing with Route53:
+**Amazon Route 53** is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost effective way to route end users to Internet applications by translating names like www.example.com into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other. Amazon Route 53 is fully compliant with IPv6 as well.
+
+- [Setting up Route53 with CloudFront](https://github.com/lakshmantgld/route53-CloudFront-S3-Setup/blob/master/readmeFiles/route53Setup.md).
