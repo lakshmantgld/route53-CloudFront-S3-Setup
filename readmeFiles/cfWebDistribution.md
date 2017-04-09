@@ -2,8 +2,8 @@
 
 1. Navigate to **Amazon AWS** -> **CloudFront** -> **Create Distribution**
 2. Choose **Web** since we are going to deploy web app.
-3. The long form appears and this looks daunting at the first site. Lot of default options is enough for setting up cloudFront. Lets look at the default options in the [Best Practices section](https://github.com/lakshmantgld/route53-CloudFront-S3-Setup/blob/master/readmeFiles/cfBestPractices.md).
-4. Copy the **S3 endpoint** and paste it in **Origin Domain Name**.
+3. The long form appears and this looks daunting at the first site. Lot of default options is enough for setting up cloudFront. Lets look at the default options later in the [Best Practices section](https://github.com/lakshmantgld/route53-CloudFront-S3-Setup/blob/master/readmeFiles/cfBestPractices.md).
+4. Copy the **S3 endpoint** that you just deployed and paste it in **Origin Domain Name**.
 5. Leave the default options under the **Cache Behavior Settings**.
 6. Under **Distribution Settings**, choose the necessary **Price Class** depending upon your use case and your budget.
 7. Since we have chose **Both HTTP & HTTPS** option in the above section, we do not need to mind about **SSL Certificate** for now.
