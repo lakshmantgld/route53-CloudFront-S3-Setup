@@ -2,7 +2,7 @@
 
 Setting up SSL for cloudFront is quite an easy step. There are many SSL options available. If you are going to give your end users the cloudFront domain name say **xxxxxx.cloudfront.net**, it is going to be a straightForward approach else, If you want your own domain name, some extra steps have to be followed.
 
-#### SSL for default CloudFront domain name:
+### SSL for default CloudFront domain name:
 To enable SSL for default cloudFront domain name, here are the steps:
 1. Click your **CloudFront Id** under the distributions section.
 2. Select the **Behaviors** tab and click **Edit** button.
@@ -10,10 +10,14 @@ To enable SSL for default cloudFront domain name, here are the steps:
 4. After doing the above step, scroll down and click **Yes, Edit**.
 5. Then, navigate to **General Tab** and click **Edit**, you will be seeing the **Distribution Settings**, under that make sure that the **Default CloudFront certificate** is toggled. Now, when you use the **xxxxxx.cloudfront.net** in the browser, it automatically redirects from HTTP to HTTPS. or you can use **https://xxxxxx.cloudfront.net** itself directly in the browser. All your viewers can interact with your site in a secured way.
 
-#### SSL for custom domain name:
-To enable SSL for custom domain name, there are two Custom SSL Client Support namely, **1. Server Name Indication (SNI)** method and **2. All Clients** method which is an expensive one. I will describe the differences below.
+### SSL for custom domain name:
+To enable SSL for custom domain name, there are two Custom SSL Client Support namely,
 
-##### 1. Server Name Indication (SNI):
+**1. Server Name Indication (SNI)** method and
+
+**2. All Clients** method which is an expensive one(600$/month).
+
+#### 1. Server Name Indication (SNI):
 CloudFront serves your content over HTTPS only to clients that support SNI. Older browsers and other clients that do not support SNI can not access your content over HTTPS. But almost all browsers support SNI. This method does not incur any extra cost. Amazon can also get you a free SSL certificate for your custom domain. Here are the steps:
 
 - Click your **CloudFront Id** under the distributions section.

@@ -6,7 +6,7 @@ Browsers also cache various objects using the **cache-control** header from resp
 
 In cloudFront, you can control cache using two methods:
 
-####1. Using Minimum, Maximum and Default TTL in cloudFront:
+#### 1. Using Minimum, Maximum and Default TTL in cloudFront:
 
 By default, the CloudFront caches the object for 24 hours. After that when any request comes, it forwards the request to S3(origin) and then serve the objects to users. During this process it also caches the object for another 24 hours. Increasing the cache period greatly improves the performance of the web app by decreasing the latency and increasing the throughput.
 
@@ -20,7 +20,7 @@ If you are unsure about the caching period of browsers, I would suggest to set t
 
 This method will affect only the CloudFront caches and not the browser caches.
 
-####2. Having Cache-Control in origin headers:
+#### 2. Having Cache-Control in origin headers:
 
 This method will affect both CloudFront cache and browser cache. To do this add the time(in seconds) to the header as **Cache-Control: (seconds)** to all the objects in S3. In cloudFront, **Use origin cache headers** should be selected. This option will be selected by default.
 
