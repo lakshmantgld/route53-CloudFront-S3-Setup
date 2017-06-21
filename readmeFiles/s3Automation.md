@@ -16,7 +16,7 @@ This process is useful, if you want to trigger any AWS services on github push. 
 3. Inside the Lambda, I clone the github repository.
 4. Use AWS's S3 SDK to upload the **build or dist** directory to your S3 bucket. Here is a high level architecture of the above process:
 
-[![Automation using SNS & Lambda][1]][1]
+![s3AutomationUsingLambdaSNS](https://raw.githubusercontent.com/lakshmantgld/route53-CloudFront-S3-Setup/master/readmeFiles/s3AutomationUsingLambdaSNS.png)
 
 The downside of this approach is cloning large repos takes time and Lambdas are billed per second. So, this may become expensive for large repos.
 
@@ -46,5 +46,4 @@ Usually in react apps the **build scripts** are triggered by the **npm or yarn**
 I added this script as part of the build scripts in package.json. This was very handy and thus automated the manual process of uploading the files to S3.
 
 
-  [1]: https://i.stack.imgur.com/cd9vZ.png
   [2]: https://medium.com/@omgwtfmarc/deploying-create-react-app-to-s3-or-cloudfront-48dae4ce0af#.dhg6jyltq
