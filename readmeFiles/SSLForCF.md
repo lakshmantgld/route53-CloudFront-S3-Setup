@@ -28,7 +28,7 @@ CloudFront serves your content over HTTPS only to clients that support SNI. Olde
 
 AWS provides a service called **ACM(AWS certificate management)** which gets us free SSL certificates, but it can be used only within the AWS. i.e those certificates can only be used in AWS infrastructure like CloudFront.
 
-The process by which it gets the SSL certificate is, first we need to give the domain name, in our case (lakshman.com). Once, we give the domain name, it searches the WHOIS database, which contains the the information about owners of various domains.
+The process by which it gets the SSL certificate is, first we need to give the domain name, in our case (lakshman.com). When you enter the domain name as `*.lakshman.com`, click **Additional Domain Name** button and add plain domain `lakshman.com` too. This is because our **SSL certificate** should be valid for both the domain and the subdomain. Once, we give the domain name, it searches the WHOIS database, which contains the the information about owners of various domains.
 
 In our case, it searches for the domain owner of lakshman. Usually domain owner's name, mail id and address are stored in that database. ACM gets those information and send a approval request mail to the domain owner. This step is made to check the authenticity of the domain owner. So that only domain owner can generate ssl certificate for their respective domains.
 
