@@ -6,7 +6,7 @@ To Invalidate objects, you can specify wither the path for the individual object
 This Invalidation by path can be specified either through AWS console or API/SDK or CLI. Since we want to automate this step, we are going to use AWS CLI, so we can add it to NPM/Yarn scripts. The command to invalidate using AWS CLI is:
 
 ```bash
-aws cloudfront create-distribution --distribution-id=<YOUR-DISTRIBUTION-ID> --paths '/*'
+aws cloudfront create-invalidation --distribution-id=<YOUR-DISTRIBUTION-ID> --paths '/*'
 ```
 
 The above command will remove all the objects from CloudFront edge cache. This is handy and can be added to your build script in npm, you can execute this command, when you add new files to your S3 bucket.
